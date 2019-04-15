@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular": {
+    "angular-noivy": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular",
+            "outputPath": "dist/angular-noivy",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -29,7 +29,8 @@
               {
                 "input": "node_modules/document-register-element/build/document-register-element.js"
               }
-            ]
+            ],
+            "es5BrowserSupport": true
           },
           "configurations": {
             "production": {
@@ -61,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular:build"
+            "browserTarget": "angular-noivy:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular:build:production"
+              "browserTarget": "angular-noivy:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular:build"
+            "browserTarget": "angular-noivy:build"
           }
         },
         "test": {
@@ -106,7 +107,7 @@
         }
       }
     },
-    "angular-e2e": {
+    "angular-noivy-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -115,11 +116,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular:serve"
+            "devServerTarget": "angular-noivy:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular:serve:production"
+              "devServerTarget": "angular-noivy:serve:production"
             }
           }
         },
@@ -135,5 +136,5 @@
       }
     }
   },
-  "defaultProject": "angular"
+  "defaultProject": "angular-noivy"
 }
