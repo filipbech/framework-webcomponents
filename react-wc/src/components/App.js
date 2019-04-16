@@ -4,7 +4,6 @@ import React, { Component } from 'react';
 class App extends Component {
 
     componentDidMount() {
-
         setTimeout(_ => {
             this.props.onButtonClick({something:true});
         }, 2000);
@@ -13,10 +12,11 @@ class App extends Component {
     render() {
         return (
             <div className="App">
+                <style dangerouslySetInnerHTML={{ __html: `h1 { color: red }`}} />
                 <h1>
                     Hello {this.props.name}
                 </h1>
-                {this.children}
+                {this.props.children}
             </div>
         );
     }
