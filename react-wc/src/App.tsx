@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import './app.css';
+import './App.css';
 
-class App extends Component {
+class App extends Component<{name: String}> {
 
   componentDidMount() {
 
-    setTimeout(_=> {
-      this.props.onButtonClick();
+    setTimeout(_ => {
+    //  this.props.onButtonClick();
       console.log('setup')
-    },2000);
+    }, 2000);
   }
 
   render() {
@@ -23,3 +23,5 @@ class App extends Component {
 }
 
 export default App;
+
+
