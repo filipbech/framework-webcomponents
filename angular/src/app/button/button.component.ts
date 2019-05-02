@@ -4,16 +4,9 @@ import { Input, Component, ViewEncapsulation, EventEmitter, Output, ChangeDetect
   selector: 'custom-button',
   template: `<h1>Im inside header</h1>
   <button (click)="handleClick()">
-    <slot>{{label}}</slot>: {{clicksCt}}
-    <slot name="icon"></slot>
+    <slot></slot>: {{clicksCt}}
   </button>`,
   styles: [`
-    button {
-      border: solid 3px;
-      padding: 8px 10px;
-      background: #bada55;
-      font-size: 20px;
-    }
     h1 {
       color:blue;
     }
