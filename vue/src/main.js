@@ -1,9 +1,8 @@
 import Vue from 'vue'
 import wrap from '@vue/web-component-wrapper';
-import HelloWorld from './components/HelloWorld.vue';
+import CustomButton from './components/CustomButton.vue';
 
-// const CustomElement = wrap(Vue, HelloWorld);
-
-// window.customElements.define('my-vue-wc', CustomElement);
+const CustomElement = wrap(Vue, CustomButton);
+window.customElements.define('custom-button', CustomElement);
 
 Vue.config.productionTip = false
