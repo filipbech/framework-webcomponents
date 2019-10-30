@@ -4,7 +4,7 @@ import { Input, Component, ViewEncapsulation, EventEmitter, Output, ChangeDetect
   selector: 'custom-button',
   template: `<h1>Im inside header</h1>
   <button (click)="handleClick()">
-    <slot></slot>: {{clicksCt}}
+    <slot>{{label}}</slot>: {{clicksCt}}
   </button>`,
   styles: [`
     h1 {
