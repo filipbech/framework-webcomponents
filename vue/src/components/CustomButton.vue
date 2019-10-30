@@ -14,7 +14,7 @@
 </style>
 <script>
   export default {
-    props: ['label'],
+    props: { label: { default: 'default label' } },
     data: () => ({
       clicksCt: 0
     }),
