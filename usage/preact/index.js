@@ -7,7 +7,7 @@ document.body.appendChild(s);
 export default class App extends Component {
 
 	render() {
-		const framework = 'React';
+		const framework = 'Preact';
 		const audience = { audience: 'World' };
 		const handleEvent = (evt) => {
 			alert('Hello' + evt.detail);
