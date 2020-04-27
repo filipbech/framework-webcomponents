@@ -1,4 +1,4 @@
-import { NgModule, Injector, CUSTOM_ELEMENTS_SCHEMA, Renderer } from '@angular/core';
+import { NgModule, Injector, CUSTOM_ELEMENTS_SCHEMA, Renderer2 } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { ButtonModule } from './button/button.module';
